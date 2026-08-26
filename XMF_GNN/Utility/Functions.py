@@ -390,22 +390,22 @@ def rename_files(directory: str, name_mapping: Dict[str, str]) -> None:
     if not os.path.exists(directory):
         print(f"The directory '{directory}' does not exist.")
         return
-    pattern = directory + "\\**\\*pcap"
-    for filename in glob.glob(pattern):
+    pattern = os.path.join(directory, "**", "*.pcap")
+    for filename in glob.glob(pattern, recursive=True):
         if not os.path.isfile(filename):
             continue
-        base = filename.split("\\")[-1]
-        old = re.sub(r"\d+", "", base.split(".")[-2])
+        base = os.path.basename(filename)
+        old = re.sub(r"\d+", "", os.path.splitext(base)[0])
         old = old[:-1] if old.endswith("_") else old
         new_name_part = name_mapping.get(old, old)
-        new_name = os.path.dirname(filename) + "\\" + new_name_part
+        new_name = os.path.join(os.path.dirname(filename), new_name_part)
         try:
-            number = re.search(r"\d+", os.path.basename(filename)).group(0)
+            number = re.search(r"\d+", base).group(0)
             new_name = new_name + "_" + number + ".pcap"
         except Exception:
             new_name = new_name + "_0.pcap"
         os.rename(filename, new_name)
-        print(f"Renamed: {os.path.basename(filename)} -> {os.path.basename(new_name)}")
+        print(f"Renamed: {base} -> {os.path.basename(new_name)}")
 
 
 def duplicate_rows(df: pd.DataFrame, target_rows: int) -> pd.DataFrame:
@@ -444,7 +444,7 @@ def split_csv(file_path: str,
       - For attack rows: keep only flows where attacker is src OR dst.
     """
     df = pd.read_csv(file_path)
-    name_file = file_path.split("\\")[-1].split(".")[-2]
+    name_file = os.path.splitext(os.path.basename(file_path))[0]
     name_check = name_file.split("-")[0]
 
     src_is_attacker = df["src_mac"].isin(attacker_macs)
@@ -485,12 +485,12 @@ def Combining_classes(directory: str,
     label_dict = _normalize_label_dict(label_dict)
 
     for each_class in tqdm(classes_list):
-        train_files = glob.glob(directory + each_class + "*")
+        train_files = glob.glob(os.path.join(directory, each_class + "*"))
         df_list = []
         last_name_file = each_class
         for f in train_files:
             df = pd.read_csv(f)
-            last_name_file = f.split("\\")[-1].split(".")[-2].split("-")[0]
+            last_name_file = os.path.splitext(os.path.basename(f))[0].split("-")[0]
             df_list.append(df)
 
         if not df_list:
@@ -511,11 +511,11 @@ def Combining_classes(directory: str,
         final_df.to_csv(train_path, index=False)
 
         # Test data: stitch the per-class test CSVs together.
-        test_files = glob.glob(directory + "test\\" + each_class + "*")
+        test_files = glob.glob(os.path.join(directory, "test", each_class + "*"))
         df_list = []
         for f in test_files:
             df = pd.read_csv(f)
-            last_name_file = f.split("\\")[-1].split(".")[-2].split("-")[0]
+            last_name_file = os.path.splitext(os.path.basename(f))[0].split("-")[0]
             df_list.append(df)
             os.remove(f)
         if df_list:

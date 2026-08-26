@@ -1,0 +1,367 @@
+2026-05-09 13:55:16,780 [INFO] PCAP_DIR        = /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP
+2026-05-09 13:55:16,780 [INFO] CSV_DIR         = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/Extracted_Flow_Features
+2026-05-09 13:55:16,780 [INFO] PROCESSED_ROOT  = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/processed_xmfgnn
+2026-05-09 13:55:16,780 [INFO] CHECKPOINT_DIR  = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/checkpoints
+2026-05-09 13:55:16,780 [INFO] ======================================================================
+2026-05-09 13:55:16,780 [INFO] Step 1/6 -- NFStream PCAP -> CSV
+2026-05-09 13:55:16,780 [INFO] ======================================================================
+2026-05-09 13:55:16,780 [WARNING] No PCAP files found at /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP -- skipping extraction.
+2026-05-09 13:55:16,780 [WARNING] If you have the dataset elsewhere, copy or symlink it to that path.
+2026-05-09 13:55:16,780 [INFO] ======================================================================
+2026-05-09 13:55:16,780 [INFO] Step 2/6 -- Multi-scale temporal features (Algorithm 1)
+2026-05-09 13:55:16,780 [INFO] ======================================================================
+2026-05-09 13:55:18,401 [WARNING] No per-class CSVs found in /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/Extracted_Flow_Features -- did extraction run?
+2026-05-09 13:55:18,401 [INFO] ======================================================================
+2026-05-09 13:55:18,401 [INFO] Step 3/6 -- Filter (MAC) + balance + standardize (Sec. 4.2)
+2026-05-09 13:55:18,401 [INFO] ======================================================================
+2026-05-09 13:55:18,403 [ERROR]   Combining_classes produced no per-class CSVs; aborting.
+2026-05-09 13:55:18,403 [INFO] ======================================================================
+2026-05-09 13:55:18,403 [INFO] Step 4/6 -- Build HeteroData graphs (NIDSDataset)
+2026-05-09 13:55:18,403 [INFO] ======================================================================
+2026-05-09 13:55:18,403 [ERROR]   Balanced CSVs not found at /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/Extracted_Flow_Features/train/df_class_8_train.csv and /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/Extracted_Flow_Features/train/df_class_8_test.csv -- run step_balance first.
+2026-05-09 13:55:18,403 [INFO] PIPELINE FINISHED in 1.6 s
+2026-05-09 13:58:11,312 [INFO] PCAP_DIR        = /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP
+2026-05-09 13:58:11,312 [INFO] CSV_DIR         = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/Extracted_Flow_Features
+2026-05-09 13:58:11,312 [INFO] PROCESSED_ROOT  = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/processed_xmfgnn
+2026-05-09 13:58:11,312 [INFO] CHECKPOINT_DIR  = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/checkpoints
+2026-05-09 13:58:11,312 [INFO] ======================================================================
+2026-05-09 13:58:11,312 [INFO] Step 1/6 -- NFStream PCAP -> CSV
+2026-05-09 13:58:11,312 [INFO] ======================================================================
+2026-05-09 13:58:11,312 [WARNING] No PCAP files found at /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP -- skipping extraction.
+2026-05-09 13:58:11,313 [WARNING] If you have the dataset elsewhere, copy or symlink it to that path.
+2026-05-09 13:58:11,313 [INFO] ======================================================================
+2026-05-09 13:58:11,313 [INFO] Step 2/6 -- Multi-scale temporal features (Algorithm 1)
+2026-05-09 13:58:11,313 [INFO] ======================================================================
+2026-05-09 13:58:12,946 [WARNING] No per-class CSVs found in /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/Extracted_Flow_Features -- did extraction run?
+2026-05-09 13:58:12,946 [INFO] ======================================================================
+2026-05-09 13:58:12,947 [INFO] Step 3/6 -- Filter (MAC) + balance + standardize (Sec. 4.2)
+2026-05-09 13:58:12,947 [INFO] ======================================================================
+2026-05-09 13:58:12,948 [ERROR]   Combining_classes produced no per-class CSVs; aborting.
+2026-05-09 13:58:12,948 [INFO] ======================================================================
+2026-05-09 13:58:12,948 [INFO] Step 4/6 -- Build HeteroData graphs (NIDSDataset)
+2026-05-09 13:58:12,948 [INFO] ======================================================================
+2026-05-09 13:58:12,948 [ERROR]   Balanced CSVs not found at /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/Extracted_Flow_Features/train/df_class_8_train.csv and /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/Extracted_Flow_Features/train/df_class_8_test.csv -- run step_balance first.
+2026-05-09 13:58:12,948 [INFO] ======================================================================
+2026-05-09 13:58:12,948 [INFO] Step 5/6 -- Train XMF-GNN (epochs=100, batch_size=64)
+2026-05-09 13:58:12,948 [INFO] ======================================================================
+2026-05-09 13:58:13,105 [INFO]   device: cuda
+2026-05-09 14:00:07,608 [INFO] PCAP_DIR        = /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP
+2026-05-09 14:00:07,609 [INFO] CSV_DIR         = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/Extracted_Flow_Features
+2026-05-09 14:00:07,609 [INFO] PROCESSED_ROOT  = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/processed_xmfgnn
+2026-05-09 14:00:07,609 [INFO] CHECKPOINT_DIR  = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/checkpoints
+2026-05-09 14:00:07,609 [INFO] ======================================================================
+2026-05-09 14:00:07,609 [INFO] Step 5/6 -- Train XMF-GNN (epochs=100, batch_size=64)
+2026-05-09 14:00:07,609 [INFO] ======================================================================
+2026-05-09 14:00:09,276 [INFO]   device: cuda
+2026-05-09 14:01:23,279 [INFO] PCAP_DIR        = /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP
+2026-05-09 14:01:23,279 [INFO] CSV_DIR         = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/Extracted_Flow_Features
+2026-05-09 14:01:23,279 [INFO] PROCESSED_ROOT  = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/processed_xmfgnn
+2026-05-09 14:01:23,279 [INFO] CHECKPOINT_DIR  = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/checkpoints
+2026-05-09 14:01:23,279 [INFO] ======================================================================
+2026-05-09 14:01:23,279 [INFO] Step 1/6 -- NFStream PCAP -> CSV
+2026-05-09 14:01:23,279 [INFO] ======================================================================
+2026-05-09 14:01:23,279 [WARNING] No PCAP files found at /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP -- skipping extraction.
+2026-05-09 14:01:23,279 [WARNING] If you have the dataset elsewhere, copy or symlink it to that path.
+2026-05-09 14:01:23,279 [INFO] ======================================================================
+2026-05-09 14:01:23,279 [INFO] Step 2/6 -- Multi-scale temporal features (Algorithm 1)
+2026-05-09 14:01:23,279 [INFO] ======================================================================
+2026-05-09 14:01:24,821 [WARNING] No per-class CSVs found in /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/Extracted_Flow_Features -- did extraction run?
+2026-05-09 14:01:24,821 [INFO] ======================================================================
+2026-05-09 14:01:24,821 [INFO] Step 3/6 -- Filter (MAC) + balance + standardize (Sec. 4.2)
+2026-05-09 14:01:24,821 [INFO] ======================================================================
+2026-05-09 14:01:24,822 [ERROR]   Combining_classes produced no per-class CSVs; aborting.
+2026-05-09 14:01:24,822 [INFO] ======================================================================
+2026-05-09 14:01:24,822 [INFO] Step 4/6 -- Build HeteroData graphs (NIDSDataset)
+2026-05-09 14:01:24,822 [INFO] ======================================================================
+2026-05-09 14:01:24,822 [ERROR]   Balanced CSVs not found at /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/Extracted_Flow_Features/train/df_class_8_train.csv and /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/Extracted_Flow_Features/train/df_class_8_test.csv -- run step_balance first.
+2026-05-09 14:01:24,822 [INFO] ======================================================================
+2026-05-09 14:01:24,822 [INFO] Step 5/6 -- Train XMF-GNN (epochs=100, batch_size=64)
+2026-05-09 14:01:24,822 [INFO] ======================================================================
+2026-05-09 14:01:24,822 [ERROR]   Cannot train: no processed graphs found.
+2026-05-09 14:01:24,822 [ERROR]     train graphs in /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/processed_xmfgnn/train/processed: 0
+2026-05-09 14:01:24,822 [ERROR]     test  graphs in /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/processed_xmfgnn/test/processed: 0
+2026-05-09 14:01:24,822 [ERROR]   Make sure the prior steps ran successfully:
+2026-05-09 14:01:24,822 [ERROR]     1. PCAPs in /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP
+2026-05-09 14:01:24,822 [ERROR]     2. Run ./run_all.sh (or ./run_all.sh --skip-extract if CSVs already exist)
+2026-05-09 14:01:24,822 [INFO] ======================================================================
+2026-05-09 14:01:24,822 [INFO] Step 6/6 -- Ablation (Table 8, epochs=100)
+2026-05-09 14:01:24,822 [INFO] ======================================================================
+2026-05-09 14:01:24,822 [ERROR]   Cannot run ablation: no processed graphs found (train=0, test=0). Skipping.
+2026-05-09 14:01:24,822 [INFO] PIPELINE FINISHED in 1.5 s
+2026-05-14 15:19:12,496 [INFO] PCAP_DIR        = /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP
+2026-05-14 15:19:12,496 [INFO] PCAP_ZIP        = /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP/PCAP.zip (exists=True)
+2026-05-14 15:19:12,496 [INFO] CSV_DIR         = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/Extracted_Flow_Features
+2026-05-14 15:19:12,496 [INFO] PROCESSED_ROOT  = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/processed_xmfgnn
+2026-05-14 15:19:12,496 [INFO] CHECKPOINT_DIR  = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/checkpoints
+2026-05-14 15:19:12,496 [INFO] ======================================================================
+2026-05-14 15:19:12,497 [INFO] Step 1/6 -- NFStream PCAP -> CSV
+2026-05-14 15:19:12,497 [INFO] ======================================================================
+2026-05-14 15:19:12,497 [INFO] Zip mode: streaming pcaps from /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP/PCAP.zip
+2026-05-14 15:19:12,497 [INFO]   tmp extract dir: /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP/_tmp_extract (auto-cleaned per file)
+2026-05-14 15:19:12,497 [INFO]   free disk before start: 359.9 GB
+2026-05-14 15:19:12,498 [INFO]   309 PCAP entries in zip
+2026-05-14 15:19:12,498 [INFO]   [2/309] Recon-PingSweep/Recon-PingSweep.pcap (0.01 GB compressed=0.01 GB) free=359.9 GB
+2026-05-14 15:19:12,938 [INFO]   [3/309] SqlInjection/SqlInjection.pcap (0.01 GB compressed=0.00 GB) free=359.8 GB
+2026-05-14 15:19:13,650 [INFO]   [4/309] Backdoor_Malware/Backdoor_Malware.pcap (0.01 GB compressed=0.01 GB) free=359.8 GB
+2026-05-14 15:19:14,172 [INFO]   [5/309] XSS/XSS.pcap (0.01 GB compressed=0.01 GB) free=359.8 GB
+2026-05-14 15:19:14,783 [INFO]   [6/309] CommandInjection/CommandInjection.pcap (0.03 GB compressed=0.02 GB) free=359.8 GB
+2026-05-14 15:19:15,600 [INFO]   [7/309] BrowserHijacking/BrowserHijacking.pcap (0.03 GB compressed=0.02 GB) free=359.7 GB
+2026-05-14 15:19:16,388 [INFO]   [8/309] DictionaryBruteForce/DictionaryBruteForce.pcap (0.04 GB compressed=0.03 GB) free=359.7 GB
+2026-05-14 15:19:17,649 [INFO]   [9/309] Recon-PortScan/Recon-PortScan.pcap (0.19 GB compressed=0.12 GB) free=359.6 GB
+2026-05-14 15:19:29,607 [INFO]   [10/309] Recon-HostDiscovery/Recon-HostDiscovery.pcap (0.21 GB compressed=0.12 GB) free=359.2 GB
+2026-05-14 15:19:52,892 [INFO]   [11/309] Recon-OSScan/Recon-OSScan.pcap (0.30 GB compressed=0.23 GB) free=358.8 GB
+2026-05-14 15:20:05,539 [INFO]   [12/309] DDoS-RSTFINFlood/DDoS-RSTFINFlood15.pcap (0.44 GB compressed=0.18 GB) free=358.2 GB
+2026-05-14 15:20:38,099 [INFO]   [13/309] DDoS-PSHACK_Flood/DDoS-PSHACK_Flood15.pcap (0.56 GB compressed=0.23 GB) free=357.7 GB
+2026-05-14 15:21:23,766 [INFO]   [14/309] DDoS-UDP_Flood/DDoS-UDP_Flood20.pcap (0.56 GB compressed=0.10 GB) free=357.0 GB
+2026-05-14 15:21:56,015 [INFO]   [15/309] DDoS-HTTP_Flood/DDoS-HTTP_Flood-.pcap (0.57 GB compressed=0.14 GB) free=356.4 GB
+2026-05-14 15:22:23,214 [INFO]   [16/309] MITM-ArpSpoofing/MITM-ArpSpoofing1.pcap (0.59 GB compressed=0.56 GB) free=355.4 GB
+2026-05-14 15:22:30,811 [INFO]   [17/309] DoS-TCP_Flood/DoS-TCP_Flood10.pcap (0.60 GB compressed=0.24 GB) free=354.3 GB
+2026-05-14 15:23:06,083 [INFO]   [18/309] DDoS-SlowLoris/DDoS-SlowLoris.pcap (0.63 GB compressed=0.45 GB) free=353.7 GB
+2026-05-14 15:23:23,180 [INFO]   [19/309] Mirai-greip_flood/Mirai-greip_flood21.pcap (0.66 GB compressed=0.61 GB) free=352.6 GB
+2026-05-14 15:23:34,587 [INFO]   [20/309] DDoS-TCP_Flood/DDoS-TCP_Flood17.pcap (0.66 GB compressed=0.26 GB) free=352.5 GB
+2026-05-14 15:24:24,906 [INFO]   [21/309] Mirai-udpplain/Mirai-udpplain24.pcap (0.78 GB compressed=0.72 GB) free=351.8 GB
+2026-05-14 15:24:37,647 [INFO]   [22/309] Benign_Final/BenignTraffic3.pcap (0.80 GB compressed=0.72 GB) free=350.3 GB
+2026-05-14 15:24:49,785 [INFO]   [23/309] DDoS-ACK_Fragmentation/DDoS-ACK_Fragmentation12.pcap (0.80 GB compressed=0.03 GB) free=348.8 GB
+2026-05-14 15:25:13,011 [INFO]   [24/309] DDoS-SynonymousIP_Flood/DDoS-SynonymousIP_Flood13.pcap (0.90 GB compressed=0.37 GB) free=347.4 GB
+2026-05-14 15:26:09,098 [INFO]   [25/309] DNS_Spoofing/DNS_Spoofing.pcap (0.91 GB compressed=0.68 GB) free=346.5 GB
+2026-05-14 15:26:24,065 [INFO]   [26/309] VulnerabilityScan/VulnerabilityScan.pcap (0.96 GB compressed=0.63 GB) free=345.2 GB
+2026-05-14 15:27:03,915 [INFO]   [27/309] DDoS-SYN_Flood/DDoS-SYN_Flood15.pcap (0.99 GB compressed=0.40 GB) free=343.5 GB
+2026-05-14 15:28:28,034 [INFO]   [28/309] DDoS-UDP_Fragmentation/DDoS-UDP_Fragmentation12.pcap (1.30 GB compressed=0.07 GB) free=342.3 GB
+2026-05-14 15:28:36,477 [INFO]   [29/309] DoS-UDP_Flood/DoS-UDP_Flood16.pcap (1.31 GB compressed=0.24 GB) free=340.2 GB
+2026-05-14 15:29:51,556 [INFO]   [30/309] DoS-HTTP_Flood/DoS-HTTP_Flood1.pcap (1.39 GB compressed=0.26 GB) free=338.8 GB
+2026-05-14 15:30:12,474 [INFO]   [31/309] DoS-SYN_Flood/DoS-SYN_Flood7.pcap (1.50 GB compressed=0.61 GB) free=336.3 GB
+2026-05-14 15:31:45,544 [INFO]   [32/309] DDoS-ICMP_Fragmentation/DDoS-ICMP_Fragmentation19.pcap (1.67 GB compressed=0.03 GB) free=334.7 GB
+2026-05-14 15:31:56,539 [INFO]   [33/309] Mirai-greeth_flood/Mirai-greeth_flood28.pcap (1.89 GB compressed=1.75 GB) free=332.1 GB
+2026-05-14 15:32:21,235 [INFO]   [34/309] MITM-ArpSpoofing/MITM-ArpSpoofing.pcap (1.91 GB compressed=1.74 GB) free=331.8 GB
+2026-05-14 15:32:45,097 [INFO]   [35/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood26.pcap (1.91 GB compressed=0.50 GB) free=329.3 GB
+2026-05-14 15:35:28,599 [INFO]   [36/309] DDoS-ICMP_Fragmentation/DDoS-ICMP_Fragmentation17.pcap (1.91 GB compressed=0.11 GB) free=327.6 GB
+2026-05-14 15:35:42,882 [INFO]   [37/309] Mirai-greip_flood/Mirai-greip_flood6.pcap (1.91 GB compressed=1.76 GB) free=324.6 GB
+2026-05-14 15:36:10,676 [INFO]   [38/309] Mirai-greip_flood/Mirai-greip_flood8.pcap (1.91 GB compressed=1.76 GB) free=324.3 GB
+2026-05-14 15:36:36,038 [INFO]   [39/309] Mirai-greip_flood/Mirai-greip_flood7.pcap (1.91 GB compressed=1.76 GB) free=324.1 GB
+2026-05-14 15:36:58,888 [INFO]   [40/309] Mirai-greip_flood/Mirai-greip_flood4.pcap (1.91 GB compressed=1.76 GB) free=323.8 GB
+2026-05-14 15:37:24,362 [INFO]   [41/309] Mirai-greip_flood/Mirai-greip_flood3.pcap (1.91 GB compressed=1.76 GB) free=323.5 GB
+2026-05-14 15:37:49,642 [INFO]   [42/309] Mirai-greip_flood/Mirai-greip_flood18.pcap (1.91 GB compressed=1.71 GB) free=323.2 GB
+2026-05-14 15:38:17,179 [INFO]   [43/309] Mirai-greip_flood/Mirai-greip_flood.pcap (1.91 GB compressed=1.76 GB) free=322.7 GB
+2026-05-14 15:38:44,900 [INFO]   [44/309] Mirai-greip_flood/Mirai-greip_flood17.pcap (1.91 GB compressed=1.76 GB) free=322.4 GB
+2026-05-14 15:39:13,949 [INFO]   [45/309] Mirai-greip_flood/Mirai-greip_flood9.pcap (1.91 GB compressed=1.76 GB) free=322.1 GB
+2026-05-14 15:39:49,059 [INFO]   [46/309] Mirai-greip_flood/Mirai-greip_flood5.pcap (1.91 GB compressed=1.76 GB) free=321.9 GB
+2026-05-14 15:40:12,690 [INFO]   [47/309] Mirai-greip_flood/Mirai-greip_flood1.pcap (1.91 GB compressed=1.76 GB) free=321.7 GB
+2026-05-14 15:40:34,240 [INFO]   [48/309] Mirai-greip_flood/Mirai-greip_flood14.pcap (1.91 GB compressed=1.76 GB) free=321.4 GB
+2026-05-14 15:41:03,492 [INFO]   [49/309] Mirai-greip_flood/Mirai-greip_flood11.pcap (1.91 GB compressed=1.76 GB) free=321.1 GB
+2026-05-14 15:41:28,585 [INFO]   [50/309] Mirai-greip_flood/Mirai-greip_flood19.pcap (1.91 GB compressed=1.76 GB) free=320.9 GB
+2026-05-14 15:42:00,191 [INFO]   [51/309] Mirai-greip_flood/Mirai-greip_flood20.pcap (1.91 GB compressed=1.76 GB) free=320.6 GB
+2026-05-14 15:42:22,826 [INFO]   [52/309] Mirai-greip_flood/Mirai-greip_flood13.pcap (1.91 GB compressed=1.76 GB) free=320.3 GB
+2026-05-14 15:42:49,829 [INFO]   [53/309] Mirai-greip_flood/Mirai-greip_flood10.pcap (1.91 GB compressed=1.76 GB) free=320.1 GB
+2026-05-14 15:43:19,142 [INFO]   [54/309] Mirai-greip_flood/Mirai-greip_flood15.pcap (1.91 GB compressed=1.76 GB) free=319.8 GB
+2026-05-14 15:43:41,832 [INFO]   [55/309] Mirai-greip_flood/Mirai-greip_flood2.pcap (1.91 GB compressed=1.76 GB) free=319.6 GB
+2026-05-14 15:44:05,860 [INFO]   [56/309] Mirai-greip_flood/Mirai-greip_flood16.pcap (1.91 GB compressed=1.76 GB) free=319.3 GB
+2026-05-14 15:44:38,330 [INFO]   [57/309] Mirai-greip_flood/Mirai-greip_flood12.pcap (1.91 GB compressed=1.76 GB) free=319.1 GB
+2026-05-14 15:45:04,192 [INFO]   [58/309] DoS-SYN_Flood/DoS-SYN_Flood2.pcap (1.91 GB compressed=0.78 GB) free=318.9 GB
+2026-05-14 15:47:03,254 [INFO]   [59/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood10.pcap (1.91 GB compressed=0.52 GB) free=316.8 GB
+2026-05-14 15:49:54,683 [INFO]   [60/309] DoS-SYN_Flood/DoS-SYN_Flood3.pcap (1.91 GB compressed=0.79 GB) free=315.1 GB
+2026-05-14 15:51:52,630 [INFO]   [61/309] DDoS-UDP_Flood/DDoS-UDP_Flood18.pcap (1.91 GB compressed=0.33 GB) free=313.1 GB
+2026-05-14 15:53:42,257 [INFO]   [62/309] Mirai-udpplain/Mirai-udpplain7.pcap (1.91 GB compressed=1.76 GB) free=311.1 GB
+2026-05-14 15:54:12,786 [INFO]   [63/309] DDoS-SynonymousIP_Flood/DDoS-SynonymousIP_Flood1.pcap (1.91 GB compressed=0.78 GB) free=307.4 GB
+2026-05-14 15:56:11,273 [INFO]   [64/309] DDoS-PSHACK_Flood/DDoS-PSHACK_Flood14.pcap (1.91 GB compressed=0.78 GB) free=305.6 GB
+2026-05-14 15:59:08,620 [INFO]   [65/309] DDoS-UDP_Flood/DDoS-UDP_Flood9.pcap (1.91 GB compressed=0.37 GB) free=303.2 GB
+2026-05-14 16:00:58,462 [INFO]   [66/309] DoS-UDP_Flood/DoS-UDP_Flood10.pcap (1.91 GB compressed=0.35 GB) free=301.1 GB
+2026-05-14 16:02:46,024 [INFO]   [67/309] DDoS-TCP_Flood/DDoS-TCP_Flood16.pcap (1.91 GB compressed=0.75 GB) free=299.1 GB
+2026-05-14 16:05:17,488 [INFO]   [68/309] DDoS-TCP_Flood/DDoS-TCP_Flood1.pcap (1.91 GB compressed=0.75 GB) free=296.9 GB
+2026-05-14 16:07:58,732 [INFO]   [69/309] Mirai-udpplain/Mirai-udpplain6.pcap (1.91 GB compressed=1.77 GB) free=294.7 GB
+2026-05-14 16:08:30,830 [INFO]   [70/309] DoS-TCP_Flood/DoS-TCP_Flood.pcap (1.91 GB compressed=0.50 GB) free=291.1 GB
+2026-05-14 16:10:23,526 [INFO]   [71/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood17.pcap (1.91 GB compressed=0.52 GB) free=289.2 GB
+2026-05-14 16:12:35,721 [INFO]   [72/309] DDoS-PSHACK_Flood/DDoS-PSHACK_Flood9.pcap (1.91 GB compressed=0.78 GB) free=287.5 GB
+2026-05-14 16:15:25,743 [INFO]   [73/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood6.pcap (1.91 GB compressed=0.51 GB) free=285.2 GB
+2026-05-14 16:17:37,041 [INFO]   [74/309] DDoS-TCP_Flood/DDoS-TCP_Flood3.pcap (1.91 GB compressed=0.76 GB) free=283.5 GB
+2026-05-14 16:20:28,831 [INFO]   [75/309] DDoS-UDP_Flood/DDoS-UDP_Flood16.pcap (1.91 GB compressed=0.28 GB) free=281.2 GB
+2026-05-14 16:22:17,272 [INFO]   [76/309] DDoS-PSHACK_Flood/DDoS-PSHACK_Flood6.pcap (1.91 GB compressed=0.71 GB) free=279.2 GB
+2026-05-14 16:24:48,649 [INFO]   [77/309] DDoS-UDP_Flood/DDoS-UDP_Flood6.pcap (1.91 GB compressed=0.37 GB) free=277.0 GB
+2026-05-14 16:26:38,980 [INFO]   [78/309] DoS-UDP_Flood/DoS-UDP_Flood12.pcap (1.91 GB compressed=0.41 GB) free=274.9 GB
+2026-05-14 16:28:21,820 [INFO]   [79/309] DoS-SYN_Flood/DoS-SYN_Flood6.pcap (1.91 GB compressed=0.77 GB) free=272.7 GB
+2026-05-14 16:30:15,885 [INFO]   [80/309] DDoS-TCP_Flood/DDoS-TCP_Flood6.pcap (1.91 GB compressed=0.78 GB) free=270.8 GB
+2026-05-14 16:33:02,866 [INFO]   [81/309] DDoS-SYN_Flood/DDoS-SYN_Flood5.pcap (1.91 GB compressed=0.76 GB) free=268.5 GB
+2026-05-14 16:35:38,789 [INFO]   [82/309] DDoS-TCP_Flood/DDoS-TCP_Flood5.pcap (1.91 GB compressed=0.59 GB) free=266.3 GB
+2026-05-14 16:37:50,543 [INFO]   [83/309] DDoS-UDP_Flood/DDoS-UDP_Flood19.pcap (1.91 GB compressed=0.33 GB) free=263.7 GB
+2026-05-14 16:39:42,762 [INFO]   [84/309] DoS-SYN_Flood/DoS-SYN_Flood5.pcap (1.91 GB compressed=0.75 GB) free=261.7 GB
+2026-05-14 16:41:39,999 [INFO]   [85/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood5.pcap (1.91 GB compressed=0.52 GB) free=259.8 GB
+2026-05-14 16:44:32,618 [INFO]   [86/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood7.pcap (1.91 GB compressed=0.52 GB) free=258.1 GB
+2026-05-14 16:46:30,162 [INFO]   [87/309] DDoS-SynonymousIP_Flood/DDoS-SynonymousIP_Flood3.pcap (1.91 GB compressed=0.78 GB) free=256.4 GB
+2026-05-14 16:48:28,216 [INFO]   [88/309] DDoS-SynonymousIP_Flood/DDoS-SynonymousIP_Flood10.pcap (1.91 GB compressed=0.79 GB) free=254.6 GB
+2026-05-14 16:50:26,711 [INFO]   [89/309] DDoS-ICMP_Fragmentation/DDoS-ICMP_Fragmentation14.pcap (1.91 GB compressed=0.05 GB) free=252.7 GB
+2026-05-14 16:50:39,337 [INFO]   [90/309] DDoS-RSTFINFlood/DDoS-RSTFINFlood1.pcap (1.91 GB compressed=0.78 GB) free=249.7 GB
+2026-05-14 16:53:26,925 [INFO]   [91/309] DDoS-SYN_Flood/DDoS-SYN_Flood12.pcap (1.91 GB compressed=0.75 GB) free=247.4 GB
+2026-05-14 16:56:12,828 [INFO]   [92/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood13.pcap (1.91 GB compressed=0.50 GB) free=245.2 GB
+2026-05-14 16:58:09,126 [INFO]   [93/309] DDoS-PSHACK_Flood/DDoS-PSHACK_Flood5.pcap (1.91 GB compressed=0.77 GB) free=243.5 GB
+2026-05-14 17:00:41,379 [INFO]   [94/309] DDoS-UDP_Flood/DDoS-UDP_Flood1.pcap (1.91 GB compressed=0.33 GB) free=241.4 GB
+2026-05-14 17:02:32,103 [INFO]   [95/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood8.pcap (1.91 GB compressed=0.49 GB) free=239.3 GB
+2026-05-14 17:04:39,435 [INFO]   [96/309] DDoS-RSTFINFlood/DDoS-RSTFINFlood7.pcap (1.91 GB compressed=0.79 GB) free=237.6 GB
+2026-05-14 17:07:03,307 [INFO]   [97/309] DDoS-UDP_Flood/DDoS-UDP_Flood14.pcap (1.91 GB compressed=0.35 GB) free=235.6 GB
+2026-05-14 17:08:52,303 [INFO]   [98/309] DDoS-PSHACK_Flood/DDoS-PSHACK_Flood.pcap (1.91 GB compressed=0.77 GB) free=233.5 GB
+2026-05-14 17:11:31,598 [INFO]   [99/309] DDoS-UDP_Flood/DDoS-UDP_Flood3.pcap (1.91 GB compressed=0.36 GB) free=231.3 GB
+2026-05-14 17:13:22,309 [INFO]   [100/309] DoS-UDP_Flood/DoS-UDP_Flood11.pcap (1.91 GB compressed=0.39 GB) free=229.3 GB
+2026-05-14 17:15:09,774 [INFO]   [101/309] DDoS-RSTFINFlood/DDoS-RSTFINFlood12.pcap (1.91 GB compressed=0.78 GB) free=227.1 GB
+2026-05-14 17:17:49,419 [INFO]   [102/309] DDoS-SynonymousIP_Flood/DDoS-SynonymousIP_Flood.pcap (1.91 GB compressed=0.78 GB) free=225.0 GB
+2026-05-14 17:19:46,730 [INFO]   [103/309] DDoS-SynonymousIP_Flood/DDoS-SynonymousIP_Flood6.pcap (1.91 GB compressed=0.80 GB) free=223.1 GB
+2026-05-14 17:21:48,602 [INFO]   [104/309] DDoS-RSTFINFlood/DDoS-RSTFINFlood10.pcap (1.91 GB compressed=0.77 GB) free=221.2 GB
+2026-05-14 17:24:13,142 [INFO]   [105/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood9.pcap (1.91 GB compressed=0.51 GB) free=219.2 GB
+2026-05-14 17:26:26,588 [INFO]   [106/309] DDoS-SynonymousIP_Flood/DDoS-SynonymousIP_Flood9.pcap (1.91 GB compressed=0.79 GB) free=217.5 GB
+2026-05-14 17:28:24,108 [INFO]   [107/309] DoS-SYN_Flood/DoS-SYN_Flood.pcap (1.91 GB compressed=0.71 GB) free=215.6 GB
+2026-05-14 17:30:23,056 [INFO]   [108/309] DoS-UDP_Flood/DoS-UDP_Flood4.pcap (1.91 GB compressed=0.24 GB) free=213.6 GB
+2026-05-14 17:31:31,626 [INFO]   [109/309] Mirai-udpplain/Mirai-udpplain19.pcap (1.91 GB compressed=1.77 GB) free=210.4 GB
+2026-05-14 17:32:03,933 [INFO]   [110/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood4.pcap (1.91 GB compressed=0.52 GB) free=206.7 GB
+2026-05-14 17:34:52,467 [INFO]   [111/309] DDoS-ICMP_Fragmentation/DDoS-ICMP_Fragmentation10.pcap (1.91 GB compressed=0.04 GB) free=205.0 GB
+2026-05-14 17:35:04,738 [INFO]   [112/309] DDoS-UDP_Flood/DDoS-UDP_Flood13.pcap (1.91 GB compressed=0.35 GB) free=202.0 GB
+2026-05-14 17:36:55,808 [INFO]   [113/309] DDoS-UDP_Flood/DDoS-UDP_Flood15.pcap (1.91 GB compressed=0.33 GB) free=200.0 GB
+2026-05-14 17:38:47,407 [INFO]   [114/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood25.pcap (1.91 GB compressed=0.49 GB) free=197.9 GB
+2026-05-14 17:42:16,689 [INFO]   [115/309] DDoS-TCP_Flood/DDoS-TCP_Flood11.pcap (1.91 GB compressed=0.78 GB) free=196.2 GB
+2026-05-14 17:44:48,008 [INFO]   [116/309] DoS-UDP_Flood/DoS-UDP_Flood14.pcap (1.91 GB compressed=0.39 GB) free=194.1 GB
+2026-05-14 17:46:34,856 [INFO]   [117/309] DoS-TCP_Flood/DoS-TCP_Flood5.pcap (1.91 GB compressed=0.76 GB) free=191.9 GB
+2026-05-14 17:48:27,337 [INFO]   [118/309] DoS-UDP_Flood/DoS-UDP_Flood2.pcap (1.91 GB compressed=0.19 GB) free=190.1 GB
+2026-05-14 17:49:17,182 [INFO]   [119/309] DDoS-PSHACK_Flood/DDoS-PSHACK_Flood3.pcap (1.91 GB compressed=0.77 GB) free=186.6 GB
+2026-05-14 17:51:43,810 [INFO]   [120/309] DDoS-TCP_Flood/DDoS-TCP_Flood.pcap (1.91 GB compressed=0.76 GB) free=184.6 GB
+2026-05-14 17:54:21,852 [INFO]   [121/309] DDoS-PSHACK_Flood/DDoS-PSHACK_Flood11.pcap (1.91 GB compressed=0.78 GB) free=182.4 GB
+2026-05-14 17:57:15,123 [INFO]   [122/309] DoS-SYN_Flood/DoS-SYN_Flood4.pcap (1.91 GB compressed=0.79 GB) free=180.1 GB
+2026-05-14 17:59:13,791 [INFO]   [123/309] DoS-TCP_Flood/DoS-TCP_Flood2.pcap (1.91 GB compressed=0.79 GB) free=178.1 GB
+2026-05-14 18:01:09,447 [INFO]   [124/309] DDoS-PSHACK_Flood/DDoS-PSHACK_Flood4.pcap (1.91 GB compressed=0.77 GB) free=176.2 GB
+2026-05-14 18:03:51,943 [INFO]   [125/309] DoS-UDP_Flood/DoS-UDP_Flood15.pcap (1.91 GB compressed=0.34 GB) free=173.9 GB
+2026-05-14 18:05:42,888 [INFO]   [126/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood14.pcap (1.91 GB compressed=0.50 GB) free=171.9 GB
+2026-05-14 18:09:06,716 [INFO]   [127/309] DDoS-RSTFINFlood/DDoS-RSTFINFlood4.pcap (1.91 GB compressed=0.77 GB) free=170.2 GB
+2026-05-14 18:11:37,513 [INFO]   [128/309] DDoS-SYN_Flood/DDoS-SYN_Flood2.pcap (1.91 GB compressed=0.74 GB) free=168.1 GB
+2026-05-14 18:14:12,597 [INFO]   [129/309] DDoS-SynonymousIP_Flood/DDoS-SynonymousIP_Flood2.pcap (1.91 GB compressed=0.78 GB) free=166.0 GB
+2026-05-14 18:16:10,290 [INFO]   [130/309] DDoS-RSTFINFlood/DDoS-RSTFINFlood13.pcap (1.91 GB compressed=0.77 GB) free=164.1 GB
+2026-05-14 18:18:33,176 [INFO]   [131/309] DDoS-PSHACK_Flood/DDoS-PSHACK_Flood10.pcap (1.91 GB compressed=0.78 GB) free=162.1 GB
+2026-05-14 18:21:48,196 [INFO]   [132/309] DDoS-PSHACK_Flood/DDoS-PSHACK_Flood13.pcap (1.91 GB compressed=0.77 GB) free=159.6 GB
+2026-05-14 18:24:27,102 [INFO]   [133/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood21.pcap (1.91 GB compressed=0.52 GB) free=157.5 GB
+2026-05-14 18:26:43,749 [INFO]   [134/309] DDoS-TCP_Flood/DDoS-TCP_Flood15.pcap (1.91 GB compressed=0.76 GB) free=155.8 GB
+2026-05-14 18:29:18,568 [INFO]   [135/309] DDoS-UDP_Flood/DDoS-UDP_Flood17.pcap (1.91 GB compressed=0.33 GB) free=153.6 GB
+2026-05-14 18:31:07,585 [INFO]   [136/309] DDoS-RSTFINFlood/DDoS-RSTFINFlood6.pcap (1.91 GB compressed=0.83 GB) free=151.5 GB
+2026-05-14 18:33:28,891 [INFO]   [137/309] DDoS-RSTFINFlood/DDoS-RSTFINFlood.pcap (1.91 GB compressed=0.78 GB) free=149.3 GB
+2026-05-14 18:35:59,204 [INFO]   [138/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood18.pcap (1.91 GB compressed=0.51 GB) free=147.1 GB
+2026-05-14 18:38:19,952 [INFO]   [139/309] DDoS-PSHACK_Flood/DDoS-PSHACK_Flood2.pcap (1.91 GB compressed=0.72 GB) free=145.4 GB
+2026-05-14 18:40:54,652 [INFO]   [140/309] DDoS-UDP_Flood/DDoS-UDP_Flood11.pcap (1.91 GB compressed=0.37 GB) free=143.2 GB
+2026-05-14 18:42:44,986 [INFO]   [141/309] DDoS-RSTFINFlood/DDoS-RSTFINFlood9.pcap (1.91 GB compressed=0.78 GB) free=141.1 GB
+2026-05-14 18:45:10,462 [INFO]   [142/309] DDoS-SYN_Flood/DDoS-SYN_Flood4.pcap (1.91 GB compressed=0.49 GB) free=139.0 GB
+2026-05-14 18:47:10,841 [INFO]   [143/309] DDoS-PSHACK_Flood/DDoS-PSHACK_Flood8.pcap (1.91 GB compressed=0.77 GB) free=136.2 GB
+2026-05-14 18:49:51,691 [INFO]   [144/309] DDoS-TCP_Flood/DDoS-TCP_Flood10.pcap (1.91 GB compressed=0.77 GB) free=134.1 GB
+2026-05-14 18:52:27,240 [INFO]   [145/309] DDoS-UDP_Flood/DDoS-UDP_Flood5.pcap (1.91 GB compressed=0.35 GB) free=131.9 GB
+2026-05-14 18:54:18,371 [INFO]   [146/309] DDoS-UDP_Flood/DDoS-UDP_Flood7.pcap (1.91 GB compressed=0.35 GB) free=129.8 GB
+2026-05-14 18:56:11,190 [INFO]   [147/309] DoS-TCP_Flood/DoS-TCP_Flood9.pcap (1.91 GB compressed=0.79 GB) free=127.8 GB
+2026-05-14 18:57:56,519 [INFO]   [148/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood19.pcap (1.91 GB compressed=0.52 GB) free=125.6 GB
+2026-05-14 19:00:12,375 [INFO]   [149/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood20.pcap (1.91 GB compressed=0.53 GB) free=124.0 GB
+2026-05-14 19:02:08,214 [INFO]   [150/309] DDoS-SYN_Flood/DDoS-SYN_Flood7.pcap (1.91 GB compressed=0.77 GB) free=122.3 GB
+2026-05-14 19:04:29,881 [INFO]   [151/309] DoS-TCP_Flood/DoS-TCP_Flood6.pcap (1.91 GB compressed=0.78 GB) free=120.2 GB
+2026-05-14 19:06:23,180 [INFO]   [152/309] DoS-UDP_Flood/DoS-UDP_Flood1.pcap (1.91 GB compressed=0.29 GB) free=118.3 GB
+2026-05-14 19:07:29,028 [INFO]   [153/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood16.pcap (1.91 GB compressed=0.62 GB) free=115.2 GB
+2026-05-14 19:09:42,959 [INFO]   [154/309] DDoS-SYN_Flood/DDoS-SYN_Flood1.pcap (1.91 GB compressed=0.75 GB) free=113.4 GB
+2026-05-14 19:12:21,054 [INFO]   [155/309] DoS-UDP_Flood/DoS-UDP_Flood6.pcap (1.91 GB compressed=0.18 GB) free=111.2 GB
+2026-05-14 19:13:15,355 [INFO]   [156/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood24.pcap (1.91 GB compressed=0.48 GB) free=107.8 GB
+2026-05-14 19:15:18,329 [INFO]   [157/309] DDoS-PSHACK_Flood/DDoS-PSHACK_Flood12.pcap (1.91 GB compressed=0.78 GB) free=106.2 GB
+2026-05-14 19:17:52,432 [INFO]   [158/309] DDoS-UDP_Flood/DDoS-UDP_Flood2.pcap (1.91 GB compressed=0.35 GB) free=104.1 GB
+2026-05-14 19:19:42,807 [INFO]   [159/309] DDoS-SYN_Flood/DDoS-SYN_Flood11.pcap (1.91 GB compressed=0.76 GB) free=102.0 GB
+2026-05-14 19:22:15,487 [INFO]   [160/309] DDoS-SynonymousIP_Flood/DDoS-SynonymousIP_Flood7.pcap (1.91 GB compressed=0.78 GB) free=99.9 GB
+2026-05-14 19:24:12,677 [INFO]   [161/309] DDoS-UDP_Fragmentation/DDoS-UDP_Fragmentation6.pcap (1.91 GB compressed=0.04 GB) free=98.0 GB
+2026-05-14 19:24:24,508 [INFO]   [162/309] Mirai-udpplain/Mirai-udpplain4.pcap (1.91 GB compressed=1.77 GB) free=95.0 GB
+2026-05-14 19:25:01,636 [INFO]   [163/309] DDoS-SynonymousIP_Flood/DDoS-SynonymousIP_Flood12.pcap (1.91 GB compressed=0.78 GB) free=91.3 GB
+2026-05-14 19:26:59,140 [INFO]   [164/309] DDoS-UDP_Flood/DDoS-UDP_Flood12.pcap (1.91 GB compressed=0.37 GB) free=89.5 GB
+2026-05-14 19:28:50,716 [INFO]   [165/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood22.pcap (1.91 GB compressed=0.50 GB) free=87.4 GB
+2026-05-14 19:30:59,869 [INFO]   [166/309] DoS-UDP_Flood/DoS-UDP_Flood.pcap (1.91 GB compressed=0.33 GB) free=85.7 GB
+2026-05-14 19:32:14,852 [INFO]   [167/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood11.pcap (1.91 GB compressed=0.51 GB) free=82.9 GB
+2026-05-14 19:34:42,588 [INFO]   [168/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood12.pcap (1.91 GB compressed=0.52 GB) free=81.2 GB
+2026-05-14 19:36:36,192 [INFO]   [169/309] DDoS-SYN_Flood/DDoS-SYN_Flood9.pcap (1.91 GB compressed=0.76 GB) free=79.6 GB
+2026-05-14 19:39:24,470 [INFO]   [170/309] DoS-TCP_Flood/DoS-TCP_Flood3.pcap (1.91 GB compressed=0.77 GB) free=77.1 GB
+2026-05-14 19:41:18,435 [INFO]   [171/309] DDoS-SYN_Flood/DDoS-SYN_Flood6.pcap (1.91 GB compressed=0.75 GB) free=75.3 GB
+2026-05-14 19:43:41,942 [INFO]   [172/309] DDoS-UDP_Flood/DDoS-UDP_Flood.pcap (1.91 GB compressed=0.33 GB) free=73.2 GB
+2026-05-14 19:45:31,862 [INFO]   [173/309] DDoS-RSTFINFlood/DDoS-RSTFINFlood8.pcap (1.91 GB compressed=0.77 GB) free=71.1 GB
+2026-05-14 19:48:01,827 [INFO]   [174/309] DDoS-SynonymousIP_Flood/DDoS-SynonymousIP_Flood11.pcap (1.91 GB compressed=0.78 GB) free=69.0 GB
+2026-05-14 19:50:00,086 [INFO]   [175/309] DDoS-RSTFINFlood/DDoS-RSTFINFlood14.pcap (1.91 GB compressed=0.77 GB) free=67.2 GB
+2026-05-14 19:52:26,322 [INFO]   [176/309] DDoS-RSTFINFlood/DDoS-RSTFINFlood3.pcap (1.91 GB compressed=0.78 GB) free=65.1 GB
+2026-05-14 19:54:49,496 [INFO]   [177/309] DDoS-SYN_Flood/DDoS-SYN_Flood.pcap (1.91 GB compressed=0.76 GB) free=63.0 GB
+2026-05-14 19:57:40,819 [INFO]   [178/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood23.pcap (1.91 GB compressed=0.49 GB) free=60.7 GB
+2026-05-14 19:59:48,967 [INFO]   [179/309] DDoS-SYN_Flood/DDoS-SYN_Flood14.pcap (1.91 GB compressed=0.76 GB) free=59.0 GB
+2026-05-14 20:02:30,979 [INFO]   [180/309] DDoS-SynonymousIP_Flood/DDoS-SynonymousIP_Flood5.pcap (1.91 GB compressed=0.79 GB) free=56.7 GB
+2026-05-14 20:04:28,022 [INFO]   [181/309] DDoS-SynonymousIP_Flood/DDoS-SynonymousIP_Flood4.pcap (1.91 GB compressed=0.78 GB) free=54.9 GB
+2026-05-14 20:06:29,641 [INFO]   [182/309] DDoS-TCP_Flood/DDoS-TCP_Flood8.pcap (1.91 GB compressed=0.75 GB) free=53.0 GB
+2026-05-14 20:08:57,362 [INFO]   [183/309] DoS-TCP_Flood/DoS-TCP_Flood7.pcap (1.91 GB compressed=0.77 GB) free=50.9 GB
+2026-05-14 20:10:51,818 [INFO]   [184/309] DDoS-PSHACK_Flood/DDoS-PSHACK_Flood1.pcap (1.91 GB compressed=0.76 GB) free=49.1 GB
+2026-05-14 20:13:28,693 [INFO]   [185/309] DDoS-PSHACK_Flood/DDoS-PSHACK_Flood7.pcap (1.91 GB compressed=0.77 GB) free=46.9 GB
+2026-05-14 20:16:07,324 [INFO]   [186/309] DoS-SYN_Flood/DoS-SYN_Flood1.pcap (1.91 GB compressed=0.77 GB) free=44.7 GB
+2026-05-14 20:18:03,107 [INFO]   [187/309] Mirai-greeth_flood/Mirai-greeth_flood8.pcap (1.91 GB compressed=1.77 GB) free=42.8 GB
+2026-05-14 20:18:30,853 [INFO]   [188/309] Mirai-greeth_flood/Mirai-greeth_flood16.pcap (1.91 GB compressed=1.76 GB) free=42.6 GB
+2026-05-14 20:19:05,464 [INFO]   [189/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood2.pcap (1.91 GB compressed=0.52 GB) free=42.3 GB
+2026-05-14 20:21:15,708 [INFO]   [190/309] DDoS-SYN_Flood/DDoS-SYN_Flood8.pcap (1.91 GB compressed=0.79 GB) free=40.6 GB
+2026-05-14 20:24:48,313 [INFO]   [191/309] DDoS-UDP_Flood/DDoS-UDP_Flood10.pcap (1.91 GB compressed=0.39 GB) free=37.9 GB
+2026-05-14 20:26:41,446 [INFO]   [192/309] DDoS-RSTFINFlood/DDoS-RSTFINFlood11.pcap (1.91 GB compressed=0.78 GB) free=35.8 GB
+2026-05-14 20:29:15,272 [INFO]   [193/309] DDoS-SYN_Flood/DDoS-SYN_Flood13.pcap (1.91 GB compressed=0.75 GB) free=33.6 GB
+2026-05-14 20:31:53,689 [INFO]   [194/309] DDoS-SynonymousIP_Flood/DDoS-SynonymousIP_Flood8.pcap (1.91 GB compressed=0.78 GB) free=31.4 GB
+2026-05-14 20:33:53,814 [INFO]   [195/309] DDoS-TCP_Flood/DDoS-TCP_Flood2.pcap (1.91 GB compressed=0.75 GB) free=29.5 GB
+2026-05-14 20:36:35,029 [INFO]   [196/309] DoS-TCP_Flood/DoS-TCP_Flood1.pcap (1.91 GB compressed=0.74 GB) free=27.3 GB
+2026-05-14 20:38:25,923 [INFO]   [197/309] DoS-UDP_Flood/DoS-UDP_Flood7.pcap (1.91 GB compressed=0.24 GB) free=25.3 GB
+2026-05-14 20:39:48,304 [INFO]   [198/309] DDoS-ICMP_Flood/DDoS-ICMP_Flood.pcap (1.91 GB compressed=0.50 GB) free=22.4 GB
+2026-05-14 20:41:59,080 [INFO]   [199/309] DDoS-RSTFINFlood/DDoS-RSTFINFlood5.pcap (1.91 GB compressed=0.77 GB) free=20.8 GB
+2026-05-14 20:44:29,818 [INFO]   [200/309] DDoS-ICMP_Fragmentation/DDoS-ICMP_Fragmentation2.pcap (1.91 GB compressed=0.04 GB) free=18.7 GB
+2026-05-14 20:44:44,079 [INFO]   [201/309] DDoS-TCP_Flood/DDoS-TCP_Flood13.pcap (1.91 GB compressed=0.75 GB) free=15.6 GB
+2026-05-14 20:47:22,156 [INFO]   [202/309] DDoS-TCP_Flood/DDoS-TCP_Flood12.pcap (1.91 GB compressed=0.75 GB) free=13.7 GB
+2026-05-14 20:49:57,346 [ERROR]   [abort] free=11.6 GB < needed=11.9 GB for DDoS-TCP_Flood/DDoS-TCP_Flood14.pcap
+2026-05-14 20:49:57,347 [ERROR]           delete some CSVs or free up disk before retrying.
+2026-05-14 20:49:57,347 [INFO] ======================================================================
+2026-05-14 20:49:57,347 [INFO] Step 2/6 -- Multi-scale temporal features (Algorithm 1)
+2026-05-14 20:49:57,347 [INFO] ======================================================================
+2026-05-14 20:49:58,925 [INFO]   enriching DDoS-TCP_Flood15.csv ...
+2026-05-15 14:39:57,519 [INFO]   enriching DDoS-PSHACK_Flood9.csv ...
+2026-05-16 14:04:03,024 [INFO]   enriching DoS-UDP_Flood10.csv ...
+2026-05-16 17:06:38,313 [INFO]   enriching DoS-SYN_Flood6.csv ...
+2026-05-16 21:10:53,492 [INFO]   enriching DDoS-SynonymousIP_Flood2.csv ...
+2026-05-17 02:58:43,524 [INFO]   enriching DDoS-SynonymousIP_Flood8.csv ...
+2026-05-17 08:29:42,099 [INFO]   enriching DDoS-UDP_Flood2.csv ...
+2026-05-18 09:39:14,807 [INFO] PCAP_DIR        = /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP
+2026-05-18 09:39:14,807 [INFO] PCAP_ZIP        = /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP/PCAP.zip (exists=True)
+2026-05-18 09:39:14,807 [INFO] CSV_DIR         = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/Extracted_Flow_Features
+2026-05-18 09:39:14,807 [INFO] PROCESSED_ROOT  = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/processed_xmfgnn
+2026-05-18 09:39:14,807 [INFO] CHECKPOINT_DIR  = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/checkpoints
+2026-05-18 09:39:14,807 [INFO] ======================================================================
+2026-05-18 09:39:14,807 [INFO] Step 4/6 -- Build HeteroData graphs (NIDSDataset)
+2026-05-18 09:39:14,807 [INFO] ======================================================================
+2026-05-18 09:39:16,684 [INFO]   building train graphs ...
+2026-05-18 09:42:43,697 [INFO]   building test graphs ...
+2026-05-18 09:43:16,824 [INFO]   built 160000 train, 25557 test graphs
+2026-05-18 09:43:16,824 [INFO] ======================================================================
+2026-05-18 09:43:16,824 [INFO] Step 5/6 -- Train XMF-GNN (epochs=100, batch_size=64)
+2026-05-18 09:43:16,824 [INFO] ======================================================================
+2026-05-18 09:43:17,549 [INFO]   device: cuda
+2026-05-18 09:43:17,770 [INFO]   train graphs: 160000, test graphs: 25557
+2026-05-18 10:38:44,192 [INFO] PCAP_DIR        = /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP
+2026-05-18 10:38:44,192 [INFO] PCAP_ZIP        = /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP/PCAP.zip (exists=True)
+2026-05-18 10:38:44,192 [INFO] CSV_DIR         = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/Extracted_Flow_Features
+2026-05-18 10:38:44,192 [INFO] PROCESSED_ROOT  = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/processed_xmfgnn
+2026-05-18 10:38:44,192 [INFO] CHECKPOINT_DIR  = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/checkpoints
+2026-05-18 10:38:44,192 [INFO] ======================================================================
+2026-05-18 10:38:44,192 [INFO] Step 5/6 -- Train XMF-GNN (epochs=100, batch_size=64)
+2026-05-18 10:38:44,192 [INFO] ======================================================================
+2026-05-18 10:38:46,255 [INFO]   device: cuda
+2026-05-18 10:38:46,487 [INFO]   train graphs: 160000, test graphs: 25557
+2026-05-18 12:29:21,780 [INFO]   training done in 6635.2 s
+2026-05-18 12:29:21,782 [INFO]   checkpoint saved to /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/checkpoints/xmfgnn_attn.pt
+2026-05-18 12:29:21,782 [INFO]   Final test evaluation:
+2026-05-18 12:29:28,121 [INFO]   test accuracy: 0.9752
+2026-05-18 12:29:28,121 [INFO] ======================================================================
+2026-05-18 12:29:28,121 [INFO] Step 6/6 -- Ablation (Table 8, epochs=100)
+2026-05-18 12:29:28,121 [INFO] ======================================================================
+2026-05-18 12:29:28,848 [INFO] --- B-GNN (fusion=baseline) ---
+2026-05-18 12:58:01,762 [INFO] PCAP_DIR        = /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP
+2026-05-18 12:58:01,762 [INFO] PCAP_ZIP        = /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP/PCAP.zip (exists=False)
+2026-05-18 12:58:01,762 [INFO] CSV_DIR         = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/Extracted_Flow_Features
+2026-05-18 12:58:01,762 [INFO] PROCESSED_ROOT  = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/processed_xmfgnn
+2026-05-18 12:58:01,762 [INFO] CHECKPOINT_DIR  = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/checkpoints
+2026-05-18 12:58:01,762 [INFO] ======================================================================
+2026-05-18 12:58:01,762 [INFO] Step 6/6 -- Ablation (Table 8, epochs=100)
+2026-05-18 12:58:01,762 [INFO] ======================================================================
+2026-05-18 12:58:03,971 [INFO] --- B-GNN (fusion=baseline) ---
+2026-05-18 12:59:17,029 [INFO] PCAP_DIR        = /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP
+2026-05-18 12:59:17,029 [INFO] PCAP_ZIP        = /home/tutay/Tutay/Tutay_Sec/CIC_IoT_2023_PCAP/PCAP.zip (exists=False)
+2026-05-18 12:59:17,029 [INFO] CSV_DIR         = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/Extracted_Flow_Features
+2026-05-18 12:59:17,029 [INFO] PROCESSED_ROOT  = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/processed_xmfgnn
+2026-05-18 12:59:17,029 [INFO] CHECKPOINT_DIR  = /home/tutay/Tutay/Tutay_Sec/XMF_GNN/XMF_NID/XMF_GNN/data/checkpoints
+2026-05-18 12:59:17,029 [INFO] ======================================================================
+2026-05-18 12:59:17,029 [INFO] Step 6/6 -- Ablation (Table 8, epochs=100)
+2026-05-18 12:59:17,029 [INFO] ======================================================================
+2026-05-18 12:59:19,204 [INFO] --- B-GNN (fusion=baseline) ---
