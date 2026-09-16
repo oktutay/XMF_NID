@@ -1,2 +1,5 @@
 # Generated graph dataset artifacts
 **/data_*.pt
+
+# Generated/raw dataset exports
+**/Extracted_Flow_Features/*.csv
